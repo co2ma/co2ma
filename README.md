@@ -1,3 +1,3 @@
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=window3357)](https://solved.ac/window3357/)
 
-![ezgif com-crop](https://github.com/user-attachments/assets/ee885422-5e1f-4789-9de9-5ba1921fa93f)
+<img id="iroha" src="https://github.com/user-attachments/assets/996290f2-6222-42fd-b2e3-00f880b06d82" width="200" height="200"/>
