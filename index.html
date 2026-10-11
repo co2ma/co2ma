@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF 문서</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#edf0f5;color:#172239;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}header{background:#fff;border-bottom:1px solid #dce2eb;padding:20px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}h1{font-size:20px;margin:0 0 5px}p{margin:0;color:#66738b;font-size:14px}nav{display:flex;gap:8px;flex-wrap:wrap}a,button{font:inherit;font-size:14px;text-decoration:none;border:1px solid #d8dfeb;border-radius:9px;padding:10px 15px;background:#fff;color:#243858;cursor:pointer}a.primary{background:#244ed8;border-color:#244ed8;color:#fff}a:focus-visible,button:focus-visible{outline:3px solid #8fa8ff;outline-offset:3px}main{padding:20px;max-width:1600px;margin:auto}.viewer{background:#fff;border:1px solid #d8dfeb;border-radius:12px;overflow:hidden;height:calc(100dvh - 170px);min-height:400px}iframe{display:block;width:100%;height:100%;border:0}.notice{padding:50px 24px;text-align:center;line-height:1.8}.notice h2{font-size:20px}.hint{margin-top:12px;font-size:12px;text-align:center}#status{min-height:20px;margin-top:8px;text-align:center;font-size:13px}@media(max-width:650px){header{align-items:flex-start;flex-direction:column;padding:18px}main{padding:12px}.viewer{height:calc(100dvh - 230px)}nav{width:100%}nav a,nav button{flex:1;text-align:center;padding:10px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div><h1 id="title">PDF 문서</h1><p id="description">온라인 문서 보기</p></div>
+    <nav aria-label="문서 메뉴">
+      <a class="primary" id="open" target="_blank" rel="noopener">PDF 열기</a>
+      <a id="download" download>다운로드</a>
+      <button id="share" type="button">링크 복사</button>
+    </nav>
+  </header>
+  <main>
+    <div class="viewer" id="viewer"></div>
+    <p class="hint">미리보기가 표시되지 않으면 ‘PDF 열기’를 눌러 확인해 주세요.</p>
+    <div id="status" role="status" aria-live="polite"></div>
+  </main>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
